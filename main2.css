@@ -70,7 +70,8 @@ body {
 		.content-wrapper h3 {
 			padding-bottom:30px;
 			font-weight: 400;
-			color:#8B462D;			
+			color:#3760B1;		
+			text-align: center;	
 			}
 		#content-1 {
 			display:block;
@@ -78,16 +79,16 @@ body {
 		#name-input{
 				border-radius: 7px;
 				height: 35px;
-				border: 1px solid #8B462D;
-				box-shadow: 3px 3px 3px 3px #E1DDDF inset;
+				border: 1px solid #3760B1;
+				box-shadow: 3px 3px 3px 3px #D8E1F3 inset;
 				width: 350px;	
 				margin-left:70px;		
 				}
 		#comment-input{
-				margin-left:13px;
+				margin-left:48px;
 				height: 105px;
-				border: 1px solid #8B462D;
-				box-shadow: 3px 3px 3px 3px #E1DDDF inset;
+				border: 1px solid #3760B1;
+				box-shadow: 3px 3px 3px 3px #D8E1F3 inset;
 				width: 350px;	
 				border-radius: 7px;
 				}
@@ -95,17 +96,17 @@ body {
 				font-size:15px;				
 				width:140px;
 				height:35px;
-				border: 1px solid #8B462D;
-				color:#8B462D;
+				border: 1px solid #3760B1;
+				color:#fff;
 				display: inline-block;
 				border-radius: 7px;
 				line-height: 35px;
 				text-align: center;		
-				margin-left:30px;	
+				margin-left:210px;	
 				cursor:pointer;
-				background:-webkit-linear-gradient(#fff 5%, #CFB7BF);
-				background:-o-linear-gradient(#fff 5%, #CFB7BF);
-				background:-moz-linear-gradient(#fff 5%, #CFB7BF);			
+				background:-webkit-linear-gradient(#86A2DA,#3760B1);
+				background:-o-linear-gradient(#86A2DA,#3760B1);
+				background:-moz-linear-gradient(#86A2DA,#3760B1);			
 				}
 		.content-wrapper div {
 			padding-bottom:30px;
@@ -115,22 +116,6 @@ body {
 			}	
 		#label-span, #label-textarea {
 			font-size:15px;
-			}
-		#preview-button{
-			margin-left: 130px;
-			width:140px;
-			height:35px;
-			border: 1px solid #8B462D;
-			color:#8B462D;
-			display: inline-block;
-			border-radius: 7px;
-			line-height: 35px;
-			text-align: center;	
-			font-size:15px;		
-			cursor:pointer;
-			background:-webkit-linear-gradient(#fff 5%, #CFB7BF);
-			background:-o-linear-gradient(#fff 5%, #CFB7BF);
-			background:-moz-linear-gradient(#fff 5%, #CFB7BF);			
 			}
 		content #content-details {
 			height:150px;
@@ -174,6 +159,7 @@ body {
 						font-family:"Comic Sans MS", cursive, sans-serif;
 					}
 					#guestbook-formDiv {
+						color:#30549C;
 						display:none;
 					}
 					#guestbook-linkDiv {
