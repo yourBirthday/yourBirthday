@@ -8,6 +8,12 @@ body {
 	font-family: Arial, Helvetica, Verdana, Sans-serif;
 }
 
+#page-image {
+	background:url("bday.jpg");	
+	width:1030px;	
+	margin:auto;	
+}
+
 #page-container {
 		margin:auto;
 		height:700px;
@@ -15,18 +21,21 @@ body {
 		width:630px;
 		border:0px solid #8B462D;
 	}
-	header {
+	#header-title {
 		height:100px;
 		font-size:40px;
 		font-size: 36px;
 		text-align: center;
 		line-height: 90px;	
-		background: url("backImg.png") repeat;	
+	}
+	#header-title div {
+		padding-top:30px;
+		color:#3760B1;
 	}
 	nav {
 		height:50px;
 		border:2px solid #fff;	
-		background: #8B462D;
+		background: -webkit-linear-gradient(#86A2DA,#3760B1);
 		}
 		nav ul {
 			list-style-type:none;
@@ -123,29 +132,16 @@ body {
 			background:-o-linear-gradient(#fff 5%, #CFB7BF);
 			background:-moz-linear-gradient(#fff 5%, #CFB7BF);			
 			}
-		/** #sign-button {
-			font-size:15px;				
-			width:140px;
-			height:35px;
-			border: 1px solid #8B462D;
-			color:#8B462D;
-			display: inline-block;
-			border-radius: 7px;
-			line-height: 35px;
-			text-align: center;		
-			margin-left:30px;	
-			cursor:pointer;
-			background:-webkit-linear-gradient(#fff 5%, #CFB7BF);
-			background:-o-linear-gradient(#fff 5%, #CFB7BF);
-			background:-moz-linear-gradient(#fff 5%, #CFB7BF);			
-			}*/
 		content #content-details {
 			height:150px;
 			border:0px solid #ccc;
-			background:#8B462D;	;
+			background: -webkit-linear-gradient(#577ECB, #3760B1);
 			}
 			content #content-details #details-text {
 				padding-top:15px;
+			}
+			#details-text a{
+				color:#fff;
 			}
 		content #content-main {
 			height:400px;
@@ -176,6 +172,22 @@ body {
 					content #content-main .col #content-text  p{
 						text-align:center;
 						font-family:"Comic Sans MS", cursive, sans-serif;
+					}
+					#guestbook-formDiv {
+						display:none;
+					}
+					#guestbook-linkDiv {
+						cursor:pointer;
+					}
+					#guestbook-linkDiv h4 {
+						padding-bottom:35px;
+					}
+					#guestbook-comments {
+						height:400px;
+						overflow-y:auto;
+					}
+					#guestbook-comments li {
+						padding-bottom:30px;
 					}
 	aside {
 		display:none;

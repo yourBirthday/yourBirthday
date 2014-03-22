@@ -1,6 +1,5 @@
 $(document).ready(
 	function(event) {
-		
 //	$("#audiotag1").play();
 
 	$("nav li")
@@ -12,6 +11,11 @@ $(document).ready(
 						function(event) {
 							$(".mainTabs").hide();
 							$("#"+$(this).attr("tabs")+"").show();
+							
+							if ($(this).index() == 4) {
+								$("#guestbook-formDiv").hide();
+								$("#guestbook-linkDiv").show();
+							}
 						}
 					);
 			}
@@ -54,6 +58,15 @@ $(document).ready(
 			.bind("click",
 				function(event) {
 					document.getElementById("guestBookForm").submit();
+				}
+			);
+			
+		$("#guestbook-linkDiv").unbind("click");
+		$("#guestbook-linkDiv h4")
+			.bind("click",
+				function(event) {
+					$("#guestbook-formDiv").show();
+					$("#guestbook-linkDiv").hide();
 				}
 			);
 })

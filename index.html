@@ -10,10 +10,11 @@
 	
 </head>
 <body>
+	<div id="page-image">
 	<div id="page-container">
 		<audio id="audiotag1" src="TheTuneWeavers-HappyHappyBirthdayBaby.mp3" autoplay="autoplay"></audio>	
 		<div id="header-container">
-			<header class="brown cursive">Birthday Invitation</header>
+			<div id="header-title" class="brown cursive"><div>Birthday Invitation</div></div>
 			<nav>
 				<ul>
 					<li tabs="content-1">Home</li>
@@ -56,24 +57,34 @@
 			</div>
 			<div id="content-5" class="mainTabs">
 				<div class="content-wrapper">
-					<form id="guestBookForm" action="insert_guest_book.php" method="post">
-						<h3>Please leave us a message</h3>
-						<div><span id="label-span">Name</span><input type="text" name="name" id="name-input" data-validation="length" data-validation-length="4-148"></input></div>
-						<div><div id="label-textarea">Your message</div><input type="textarea" name="comments" id="comment-input" data-validation="length" data-validation-length="4-1800"></input></div>
-						<span id="preview-button">Preview Entry</span><input type="submit" id="submit-comment-input"></input>
-					</form>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.1.47/jquery.form-validator.min.js"></script>
-<script>
-$.validate({
-  form : '#guestBookForm'
-});
-</script>
+					<div id="guestbook-linkDiv">
+						<h4 class="cursive">Please click this link</h4>
+						<div id="guestbook-comments">
+							<ul>
+								<li>Just example of comment.</li>
+							</ul>
+						</div>
+					</div>
+					<div id="guestbook-formDiv">
+						<form id="guestBookForm" action="insert_guest_book.php" method="post">
+							<h3>Please leave us a message</h3>
+							<div><span id="label-span">Name</span><input type="text" name="name" id="name-input" data-validation="length" data-validation-length="4-148"></input></div>
+							<div><div id="label-textarea">Your message</div><input type="textarea" name="comments" id="comment-input" data-validation="length" data-validation-length="4-1800"></input></div>
+							<span id="preview-button">Preview Entry</span><input type="submit" id="submit-comment-input"></input>
+						</form>
+						<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+						<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.1.47/jquery.form-validator.min.js"></script>
+						<script>
+						$.validate({
+						  form : '#guestBookForm'
+						});
+						</script>
+					</div>
 				</div>
 			</div>			
 		</content>
 		<aside>Aside</aside>
 	</div>
-
+	</div>
 </body>
 </html>
