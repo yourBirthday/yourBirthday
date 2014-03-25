@@ -58,18 +58,36 @@
 			<div id="content-5" class="mainTabs">
 				<div class="content-wrapper">
 					<div id="guestbook-linkDiv">
-						<h4 class="cursive">Please click this link</h4>
+						<h4 class="cursive">Please click this link to sign the guestbook</h4>
 						<div id="guestbook-comments">
 							<ul>
-								<li>Just example of comment.</li>
+								<?php
+									$localhost="127.0.0.1";
+									$user="ramil";
+									$pass="ramil";
+									$db="birthdays";
+									$con=mysqli_connect($localhost,$user,$pass,$db);
+									// Check connection
+									if (mysqli_connect_errno()) {
+  										echo "Failed to connect to MySQL: " . mysqli_connect_error();
+  									}
+
+									$result = mysqli_query($con,"SELECT name,comments FROM guest_book");
+
+									while($row = mysqli_fetch_array($result)) {
+
+										echo "<li>" . $row['name'] . ": ". $row['comments'] . "</li>";
+									}
+									mysqli_close($con);
+								?>
 							</ul>
 						</div>
 					</div>
 					<div id="guestbook-formDiv">
 						<form id="guestBookForm" action="insert_guest_book.php" method="post">
 							<h3>Please leave us a message</h3>
-							<div><span id="label-span">Name</span><input type="text" name="name" id="name-input" data-validation="length" data-validation-length="4-148"></input></div>
-							<div><div id="label-textarea">Your message</div><input type="textarea" name="comments" id="comment-input" data-validation="length" data-validation-length="4-1800"></input></div>
+							<div><span id="label-span">Name</span><input type="text" name="name" id="name-input" data-validation="length" data-validation-length="2-148" data-validation-error-msg="The name has to be at least 2 characters long"></input></div>
+							<div><div id="label-textarea">Your message</div><input type="textarea" name="comments" id="comment-input" data-validation="length" data-validation-length="max1800" data-validation-error-msg="The comment has to be at most 1800 characters long"></input></div>
 							<span id="preview-button">Preview Entry</span><input type="submit" id="submit-comment-input"></input>
 						</form>
 						<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -77,6 +95,7 @@
 						<script>
 						$.validate({
 						  form : '#guestBookForm'
+
 						});
 						</script>
 					</div>
