@@ -19,8 +19,8 @@
 				<ul>
 					<li tabs="content-1">Home</li>
 					<li tabs="content-2">Pictures</li>
-					<li tabs="content-3">Audio</li>
-					<li tabs="content-4">RSVP</li>
+				<!--	<li tabs="content-3">Audio</li>
+					<li tabs="content-4">RSVP</li>  -->
 					<li tabs="content-5">Guest Book</li>
 				</ul>
 			</nav>
@@ -32,29 +32,32 @@
 					<div class="col">
 						<div id="content-text">
 							<h4 class="cursive">It's my Birthday!</h4>
-							<p>Please join me to celebrate </br>with cupcakes and fun. </br> because I am turning one! </br> Party at my house -</p>
+							<p>Please join me to celebrate </br>with cupcakes and fun. </br> because I am turning one! </br> Party at Nani's house -</p>
 							</br>
-							<p>1012 Beverly Hills Apts</br> on Mar 30th at 4pm. </br> I hope you can come - </br> if not, please tell my mommy </br> Rupinder at 981.045.6909</br></p>						
+							<p>1012 Beverly Hills Apts</br> on Mar 29th at 7pm. </br> I hope you can come - </br> if not, please tell my mommy </br> Rupinder at 981.045.6909</br></p>						
 							<h4 class="cursive">Reyansh Sharma</h4>
 						</div>
 					</div>
 				</div>
-				<div id="content-details">
+				<div id="content-details" aligh="center">
 					<p id="details-text" class="white cursive center">No gifts please! <br>If you really want to send me a gift, you can instead send donations to this noble cause.</br>
-					<a href="http://www.trustkesari.in">http://www.trustkesari.in</a>&nbsp;&nbsp;&nbsp;(<a href="KesariDeviTrustBrochure.pdf">Brochure</a>)<br>
-					If you want mommy can collect money and send it to the trust</p>
+					<a href="http://www.trustkesari.in">http://www.trustkesari.in</a>&nbsp;&nbsp;&nbsp;(<a href="KesariDeviTrustBrochure.pdf">Brochure</a>)<br></p>
 				</div>
 			</div>
 			<div id="content-2" class="mainTabs">
-				<input type="button" value="Button1"></input>
+			<!--	<input type="button" value="Button1"></input>  -->
+                            <div id="content-text">
+				<h4 class="cursive"></br></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Coming Soon!</br></br>
+                                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mommy will post some pictures soon.</br></h4>
+			    </div>
 			</div>
-			<div id="content-3" class="mainTabs">
+		<!--	<div id="content-3" class="mainTabs">
 				<input type="button" value="Button1"></input>
 				<input type="button" value="Button2"></input>			
 			</div>
 			<div id="content-4" class="mainTabs">
 				<input type="button" value="Button1"></input>			
-			</div>
+			</div>  -->
 			<div id="content-5" class="mainTabs">
 				<div class="content-wrapper">
 					<div id="guestbook-linkDiv">
@@ -95,7 +98,6 @@
 						<script>
 						$.validate({
 						  form : '#guestBookForm'
-
 						});
 						</script>
 					</div>
